@@ -1,5 +1,5 @@
 from controller import *
 
-greeting()
+welcome()
 
-choice_todo()
+menu()
