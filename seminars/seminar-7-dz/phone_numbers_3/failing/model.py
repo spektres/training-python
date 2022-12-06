@@ -22,7 +22,7 @@ def newcontact():
     lastname = input_lastname() 
     phoneNum = input("Введите ваш номер телефона: ") 
     emailID = input("Введите Описание: ")
-    contactDetails = (f"Имя пользователя: {firstname}\nФамилия пользователя: {lastname}\nТелефон пользователя:{phoneNum}\nОписание пользователя: {emailID}\n\n")
+    contactDetails = (firstname, lastname, phoneNum, emailID)
     myfile = open(sd.filename, "a", encoding='utf-8') 
     myfile.write(contactDetails) 
     print(f"Новая запись в телефонном справочнике:\n\n{contactDetails}\nуспешно создана!")
